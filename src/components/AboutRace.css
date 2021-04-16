@@ -1,0 +1,45 @@
+.container {
+  font-size: 24px;
+  width: 60%;
+  height: 80vh;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+.raceName {
+  text-transform: uppercase;
+}
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background: rgb(131,58,180);
+background: linear-gradient(261deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(176,122,46,1) 100%);
+  color: #fff;
+}
+
+table {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 8vh;
+  width: 100%;
+  background-color: #fff;
+}
+td{
+  padding: 2vh;
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    font-size: 20px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    font-size: 16px;
+  }
+}
