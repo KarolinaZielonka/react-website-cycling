@@ -1,47 +1,47 @@
 import React, { useState, useEffect } from "react";
 import "./AboutRace.css";
-import Table from "./Table";
+import Table from "../CardItem/Table";
 
 const races = {
   "/race/tourdefrance": {
     name: "Tour De France",
     country: "france",
-    firstRace: "1999",
-    lastWinner: "John",
+    firstRace: "1903",
+    lastWinner: "Tadej Pogačar",
     shirtColor: "yellow",
-    recordWinner: "Tom",
+    recordWinner: "Jacques Anquetil",
   },
   "/race/vueltaaespana": {
     name: "Vuelta a espana",
     country: "spain",
-    firstRace: "1999",
-    lastWinner: "John",
-    shirtColor: "yellow",
-    recordWinner: "Tom",
+    firstRace: "1935",
+    lastWinner: "Primož Roglič",
+    shirtColor: "red",
+    recordWinner: "Tony Rominger",
   },
   "/race/giroditalia": {
     name: "Giro Di Italia",
     country: "italy",
-    firstRace: "1999",
-    lastWinner: "John",
-    shirtColor: "yellow",
-    recordWinner: "Tom",
+    firstRace: "1909",
+    lastWinner: "Tao Geoghegan Hart",
+    shirtColor: "pink",
+    recordWinner: "Eddy Merckx",
   },
   "/race/tourdepologne": {
     name: "Tour De Pologne",
     country: "poland",
-    firstRace: "1999",
-    lastWinner: "John",
+    firstRace: "1928",
+    lastWinner: "Remco Evenepoel",
     shirtColor: "yellow",
-    recordWinner: "Tom",
+    recordWinner: "Marian Więckowski",
   },
   "/race/stradebianche": {
     name: "Strade Bianche",
     country: "italy",
-    firstRace: "1999",
-    lastWinner: "John",
-    shirtColor: "yellow",
-    recordWinner: "Tom",
+    firstRace: "2007",
+    lastWinner: "Mathieu van der Poel",
+    shirtColor: "-",
+    recordWinner: "-",
   },
 };
 
