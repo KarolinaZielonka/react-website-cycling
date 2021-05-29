@@ -56,7 +56,7 @@ function AboutRace(props) {
       setExist(false);
       console.log("do not exists");
     }
-  });
+  },[]);
   const location = window.location.pathname;
   return (
     <>

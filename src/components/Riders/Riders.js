@@ -11,17 +11,17 @@ function Riders() {
                     <div className="cards__wrapper">
                         <ul className="cards__items">
                             <RiderCard
-                                src={require("../../images/giro-italia.jpg").default}
+                                src={require("../../images/user.png").default}
                                 name="John Doe"
                                 age="34"
                                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
                             <RiderCard
-                                src={require("../../images/giro-italia.jpg").default}
+                                src={require("../../images/user.png").default}
                                 name="John Doe"
                                 age="34"
                                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
                             <RiderCard
-                                src={require("../../images/giro-italia.jpg").default}
+                                src={require("../../images/user.png").default}
                                 name="John Doe"
                                 age="34"
                                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
@@ -29,17 +29,17 @@ function Riders() {
                         
                         <ul className="cards__items">
                             <RiderCard
-                                src={require("../../images/giro-italia.jpg").default}
+                                src={require("../../images/user.png").default}
                                 name="John Doe"
                                 age="34"
                                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
                             <RiderCard
-                                src={require("../../images/giro-italia.jpg").default}
+                                src={require("../../images/user.png").default}
                                 name="John Doe"
                                 age="34"
                                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
                             <RiderCard
-                                src={require("../../images/giro-italia.jpg").default}
+                                src={require("../../images/user.png").default}
                                 name="John Doe"
                                 age="34"
                                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
