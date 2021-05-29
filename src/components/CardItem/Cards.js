@@ -10,13 +10,13 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src={require("../../images/img-9.jpg").default}
+              src={require("../../images/Tour-de-France.jpg").default}
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
               label="Tour de France"
               path="/race/tourdefrance"
             />
             <CardItem
-              src={require("../../images/img-9.jpg").default}
+              src={require("../../images/Vuelta.jpg").default}
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
               label="Vuelta a España"
               path="/race/vueltaaespana"
@@ -24,19 +24,19 @@ function Cards() {
           </ul>
           <ul className="cards__items">
             <CardItem
-              src={require("../../images/img-9.jpg").default}
+              src={require("../../images/giro-italia.jpg").default}
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
               label="Giro d'italia"
               path="/race/giroditalia"
             />
             <CardItem
-              src={require("../../images/img-9.jpg").default}
+              src={require("../../images/unnamed.png").default}
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
               label="Tour de Polonge"
               path="/race/tourdepologne"
             />
             <CardItem
-              src={require("../../images/img-9.jpg").default}
+              src={require("../../images/strade.jpg").default}
               text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
               label="Strade Bianche"
               path="/race/stradebianche"

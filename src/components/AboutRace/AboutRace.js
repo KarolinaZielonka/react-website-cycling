@@ -45,7 +45,6 @@ const races = {
   },
 };
 
-//path {window.location.pathname} === /race/NAME
 function AboutRace(props) {
   const [existInDic, setExist] = useState(true);
 
@@ -58,21 +57,21 @@ function AboutRace(props) {
       console.log("do not exists");
     }
   });
-
+  const location = window.location.pathname;
   return (
     <>
       <div className="container">
         <b>
           {existInDic ? (
             <Table 
-              name={races[window.location.pathname].name}
-              country={races[window.location.pathname].country}
-              firstRace={races[window.location.pathname].firstRace}
-              lastWinner={races[window.location.pathname].lastWinner}
-              shirtColor={races[window.location.pathname].shirtColor}
-              recordWinner={races[window.location.pathname].recordWinner} />
+              name={races[location].name}
+              country={races[location].country}
+              firstRace={races[location].firstRace}
+              lastWinner={races[location].lastWinner}
+              shirtColor={races[location].shirtColor}
+              recordWinner={races[location].recordWinner} />
           ) : (
-            "no"
+            "none"
           )}
         </b>
       </div>
