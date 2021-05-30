@@ -3,46 +3,48 @@ import RiderCard from './RiderCard';
 import "./Riders.css";
 
 function Riders() {
+    const ridersData = [
+        {
+            src: require("../../images/riders/froome.jpg").default,
+            name: "Chris Froome",
+            age: "20 maja 1985",
+            team: "Israel Start-Up Nation",
+            wins: "Tour de france",
+        },
+        {
+            src: require("../../images/riders/kwiat.jpg").default,
+            name: "Michał Kwiatkowski",
+            age: "34",
+            team: "Israel Start-Up Nation",
+            wins: "Tour de pologne",
+        },
+        {
+            src: require("../../images/riders/sagan.jpg").default,
+            name: "Peter Sagan",
+            age: "34",
+            team: "Israel Start-Up Nation",
+            wins: "Giro de italia",
+        }
+    ]
+    const xx = ridersData.map((rider, index)=>(
+            
+                <RiderCard
+                src={rider.src}
+                name={rider.name}
+                age={rider.age}
+                team={rider.team}
+                wins={rider.wins}/>
+            
+    ));
+
     return (
         <>
             <div className="cards">
-                <h1>Check out these EPIC riders!</h1>
+                <h1>Check out these AWESOME riders!</h1>
                 <div className="cards__container">
                     <div className="cards__wrapper">
                         <ul className="cards__items">
-                            <RiderCard
-                                src={require("../../images/user.png").default}
-                                name="John Doe"
-                                age="34"
-                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-                            <RiderCard
-                                src={require("../../images/user.png").default}
-                                name="John Doe"
-                                age="34"
-                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-                            <RiderCard
-                                src={require("../../images/user.png").default}
-                                name="John Doe"
-                                age="34"
-                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-                        </ul>
-                        
-                        <ul className="cards__items">
-                            <RiderCard
-                                src={require("../../images/user.png").default}
-                                name="John Doe"
-                                age="34"
-                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-                            <RiderCard
-                                src={require("../../images/user.png").default}
-                                name="John Doe"
-                                age="34"
-                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-                            <RiderCard
-                                src={require("../../images/user.png").default}
-                                name="John Doe"
-                                age="34"
-                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                            {xx}
                         </ul>
                     </div>
                 </div>

@@ -31,9 +31,9 @@ const useStyles = makeStyles({
 
 function RiderCard(props) {
     const icons = [<FolderIcon />,<EmojiEventsIcon/>, <PermContactCalendarIcon/>]
-    const data = [props.name, props.age, props.description]
+    const data = [props.name +" "+ props.age, props.team, props.wins]
     const listItems = [];
-    for (let i = 0; i<3;i++){
+    for (let i = 0; i<data.length;i++){
         listItems.push(
         <List>
             <ListItem>
