@@ -26,6 +26,7 @@ h1 {
 }
 
 .cards__item {
+  min-width: 300px;
   display: flex;
   flex: 1;
   margin: 0 1rem;

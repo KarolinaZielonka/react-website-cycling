@@ -12,6 +12,7 @@ function App() {
     <Router>
       <Navbar/>
       <Switch>
+        <Route path='/react-website-cycling' exact component={Home}/>
         <Route path='/' exact component={Home}/>
         <Route path='/teams' exact component={Teams}/>
         <Route path='/riders' exact component={Riders}/>

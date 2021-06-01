@@ -6,16 +6,18 @@ import {
     Card, 
     CardContent,
     CardMedia,
-    Typography
+    Typography,
+    List,
+    ListItem,
+    ListItemAvatar,
+    ListItemText
 } from '@material-ui/core';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import ListItemText from '@material-ui/core/ListItemText';
-import Avatar from '@material-ui/core/Avatar';
-import FolderIcon from '@material-ui/icons/Folder';
-import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
-import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
+import{
+    EmojiEvents,
+    PermContactCalendar,
+    Group
+}
+from '@material-ui/icons';
 
 const useStyles = makeStyles({
     root: {
@@ -26,11 +28,15 @@ const useStyles = makeStyles({
     },
     title: {
         textAlign: "center"
+    },
+    icon: {
+        color: "rgb(220,20,60)",
     }
   });
 
 function RiderCard(props) {
-    const icons = [<FolderIcon />,<EmojiEventsIcon/>, <PermContactCalendarIcon/>]
+    const classes = useStyles();
+    const icons = [<PermContactCalendar className={classes.icon}/>,<Group className={classes.icon}/>, <EmojiEvents className={classes.icon}/> ]
     const data = [props.name +" "+ props.age, props.team, props.wins]
     const listItems = [];
     for (let i = 0; i<data.length;i++){
@@ -38,9 +44,7 @@ function RiderCard(props) {
         <List>
             <ListItem>
                 <ListItemAvatar>
-                    <Avatar>
-                        {icons[i]}
-                    </Avatar>
+                    {icons[i]}
                 </ListItemAvatar>
                 <ListItemText
                     primary={data[i]}
@@ -48,7 +52,6 @@ function RiderCard(props) {
             </ListItem>
         </List>);
     }
-    const classes = useStyles();
     return (
         <>
         <li className="cards__item">

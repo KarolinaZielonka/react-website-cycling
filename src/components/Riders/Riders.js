@@ -7,22 +7,22 @@ function Riders() {
         {
             src: require("../../images/riders/froome.jpg").default,
             name: "Chris Froome",
-            age: "20 maja 1985",
+            age: "May 20, 1985",
             team: "Israel Start-Up Nation",
             wins: "Tour de france",
         },
         {
             src: require("../../images/riders/kwiat.jpg").default,
             name: "Michał Kwiatkowski",
-            age: "34",
-            team: "Israel Start-Up Nation",
+            age: "June 2, 1990",
+            team: "Team Sky",
             wins: "Tour de pologne",
         },
         {
             src: require("../../images/riders/sagan.jpg").default,
             name: "Peter Sagan",
-            age: "34",
-            team: "Israel Start-Up Nation",
+            age: "January 26, 1990",
+            team: "Bora-Hansgrohe",
             wins: "Giro de italia",
         }
     ]
